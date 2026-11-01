@@ -14,6 +14,32 @@
   fbq('track', 'PageView');
   </script>
   <!-- End Meta Pixel Code -->
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYL5RGPB9W"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WYL5RGPB9W');
+  // Clique em qualquer link de WhatsApp vira o evento "generate_lead" (conversao principal do site)
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (!/wa\.me|whatsapp\.com/i.test(href)) return;
+    var texto = '';
+    var m = href.match(/[?&]text=([^&]*)/);
+    if (m) { try { texto = decodeURIComponent(m[1].replace(/\+/g, ' ')); } catch (err) { texto = m[1]; } }
+    gtag('event', 'generate_lead', {
+      method: 'whatsapp',
+      lead_source: 'site',
+      page_path: location.pathname,
+      link_text: (a.textContent || '').trim().slice(0, 80),
+      whatsapp_message: texto.slice(0, 80)
+    });
+  }, true);
+  </script>
+  <!-- End Google Analytics -->
   <meta name="facebook-domain-verification" content="x0w7pfoaf47e9zd201dqw4vgn8gura" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Poltrona de Massagem iRest Quantum | Vida Relax</title>

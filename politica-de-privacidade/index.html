@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Preferencia de cookies (LGPD): se o visitante recusou, nada de medicao -->
+  <script>
+  (function () {
+    var escolha = null;
+    try { escolha = localStorage.getItem('vr_cookies'); } catch (e) {}
+    window.vrSemRastreio = (escolha === 'recusado');
+    if (window.vrSemRastreio) { window['ga-disable-G-WYL5RGPB9W'] = true; }
+  })();
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  if (window.vrSemRastreio) { fbq('consent', 'revoke'); }
+  fbq('init', '3964888213815860');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYL5RGPB9W"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WYL5RGPB9W');
+  // Clique em qualquer link de WhatsApp vira o evento "generate_lead" (conversao principal do site)
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (!/wa\.me|whatsapp\.com/i.test(href)) return;
+    var texto = '';
+    var m = href.match(/[?&]text=([^&]*)/);
+    if (m) { try { texto = decodeURIComponent(m[1].replace(/\+/g, ' ')); } catch (err) { texto = m[1]; } }
+    gtag('event', 'generate_lead', {
+      method: 'whatsapp',
+      lead_source: 'site',
+      page_path: location.pathname,
+      link_text: (a.textContent || '').trim().slice(0, 80),
+      whatsapp_message: texto.slice(0, 80)
+    });
+  }, true);
+  </script>
+  <!-- End Google Analytics -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Política de Privacidade e Cookies | Vida Relax</title>
+  <meta name="description" content="Como a Vida Relax Poltronas de Massagem coleta, usa e protege seus dados pessoais e como usamos cookies no site, de acordo com a LGPD.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vidarelaxpoltronas.com.br/politica-de-privacidade/">
+  <link rel="icon" href="/img/favicon/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root { --purple: #6b21a8; --purple-pale: #f5f0ff; --black: #14141e; --gray: #55556a; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: 'Inter', sans-serif; color: var(--black); background: #fafafa; line-height: 1.7; }
+    .topo { background: var(--black); padding: 18px 20px; }
+    .topo a { color: #fff; text-decoration: none; font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; }
+    main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+    h1 { font-family: 'Playfair Display', serif; font-size: 2rem; line-height: 1.25; margin: 0 0 8px; }
+    h2 { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin: 36px 0 8px; color: var(--purple); }
+    p, li { color: var(--gray); }
+    .data { font-size: .9rem; color: #8a8a9a; margin-bottom: 28px; }
+    .caixa { background: var(--purple-pale); border-radius: 10px; padding: 16px 20px; }
+    a { color: var(--purple); }
+    button.preferencias { margin-top: 8px; background: var(--purple); color: #fff; border: 0; border-radius: 999px; padding: 10px 20px; font: 600 .95rem 'Inter', sans-serif; cursor: pointer; }
+    footer { text-align: center; font-size: .85rem; color: #8a8a9a; padding: 24px 20px 40px; }
+  </style>
+</head>
+
+<body>
+  <div class="topo"><a href="/">Vida Relax</a></div>
+  <main>
+    <h1>Política de Privacidade e Cookies</h1>
+    <p class="data">Última atualização: 1º de novembro de 2026</p>
+
+    <p>Esta política explica como a Vida Relax – Bem Estar e Harmonia Comércio de Móveis e Serviços Ltda. (CNPJ 49.518.213/0001-07), com showroom no Villa Romana Shopping, em Florianópolis/SC, trata os seus dados pessoais, de acordo com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, a LGPD).</p>
+
+    <h2>Quais dados coletamos</h2>
+    <ul>
+      <li><strong>Dados que você nos envia</strong> quando conversa com a gente pelo WhatsApp, por telefone ou no showroom: nome, telefone, cidade e as informações necessárias para orçamento, compra, entrega, instalação, aluguel para eventos ou parceria.</li>
+      <li><strong>Dados de navegação no site</strong>, coletados por cookies e tecnologias parecidas: páginas visitadas, tempo no site, tipo de aparelho e navegador, cidade aproximada, de onde a visita veio e cliques nos botões de WhatsApp.</li>
+    </ul>
+
+    <h2>Para que usamos</h2>
+    <ul>
+      <li>Responder ao seu contato, fazer orçamentos, vender, entregar, instalar e prestar assistência.</li>
+      <li>Entender como o site é usado, para melhorar o conteúdo e a experiência.</li>
+      <li>Medir e melhorar os nossos anúncios.</li>
+      <li>Cumprir obrigações legais e fiscais.</li>
+    </ul>
+    <p>Não vendemos os seus dados.</p>
+
+    <h2>Cookies que usamos</h2>
+    <ul>
+      <li><strong>Google Analytics (Google):</strong> mede visitas e o uso do site, de forma estatística.</li>
+      <li><strong>Pixel do Meta (Facebook e Instagram):</strong> mede os resultados dos anúncios e ajuda a mostrá-los a pessoas com interesse em bem-estar.</li>
+    </ul>
+    <p>Esses serviços são fornecidos pelo Google e pela Meta, que podem tratar os dados em servidores fora do Brasil, seguindo as próprias políticas de privacidade.</p>
+
+    <div class="caixa">
+      <p style="margin:0"><strong>Você escolhe.</strong> Pode recusar os cookies de medição e anúncios a qualquer momento. O site continua funcionando normalmente.</p>
+      <button type="button" class="preferencias" onclick="window.vrCookies && window.vrCookies.abrir()">Alterar minhas preferências de cookies</button>
+    </div>
+
+    <h2>Com quem compartilhamos</h2>
+    <p>Apenas com quem é necessário para a finalidade: transportadoras e instaladores (para entregar a sua poltrona), meios de pagamento, contabilidade e as ferramentas citadas acima. Também podemos compartilhar dados quando a lei exigir.</p>
+
+    <h2>Por quanto tempo guardamos</h2>
+    <p>Pelo tempo necessário para atender você, prestar a garantia e a assistência e cumprir as obrigações legais e fiscais. Depois disso, os dados são apagados ou anonimizados.</p>
+
+    <h2>Seus direitos</h2>
+    <p>Pela LGPD, você pode pedir a confirmação de que tratamos os seus dados, acesso, correção, anonimização, bloqueio ou eliminação, portabilidade, informação sobre com quem compartilhamos e revogação do consentimento. Para isso, fale com a gente pelo WhatsApp <a href="https://wa.me/5548991324458">(48) 99132-4458</a>. Você também pode recorrer à Autoridade Nacional de Proteção de Dados (ANPD).</p>
+
+    <h2>Alterações</h2>
+    <p>Esta política pode ser atualizada. A data da última versão fica sempre no topo desta página.</p>
+
+    <p style="margin-top:36px"><a href="/">Voltar para o site</a></p>
+  </main>
+  <footer>© 2026 Vida Relax – Bem Estar e Harmonia Comércio de Móveis e Serviços Ltda. | CNPJ: 49.518.213/0001-07</footer>
+  <!-- Aviso de cookies (LGPD) -->
+  <div id="vr-cookies" role="dialog" aria-live="polite" aria-label="Aviso de cookies" style="display:none;position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:560px;margin:0 auto;background:#14141e;color:#fff;border-radius:12px;padding:16px 18px;box-shadow:0 8px 30px rgba(0,0,0,.25);font-family:'Inter',sans-serif;font-size:14px;line-height:1.5">
+    <p style="margin:0 0 12px;color:#fff">Usamos cookies para medir as visitas e melhorar nossos anúncios. Você pode aceitar ou recusar. <a href="/politica-de-privacidade/" style="color:#e8c97a">Saiba mais</a></p>
+    <div style="display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap">
+      <button type="button" id="vr-cookies-recusar" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:8px 18px;font:600 14px 'Inter',sans-serif;cursor:pointer">Recusar</button>
+      <button type="button" id="vr-cookies-aceitar" style="background:#9333ea;color:#fff;border:0;border-radius:999px;padding:8px 18px;font:600 14px 'Inter',sans-serif;cursor:pointer">Aceitar</button>
+    </div>
+  </div>
+  <script>
+  (function () {
+    var caixa = document.getElementById('vr-cookies');
+    function ler() { try { return localStorage.getItem('vr_cookies'); } catch (e) { return null; } }
+    function salvar(v) { try { localStorage.setItem('vr_cookies', v); } catch (e) {} }
+    function fechar() { caixa.style.display = 'none'; }
+    function abrir() { caixa.style.display = 'block'; }
+    document.getElementById('vr-cookies-aceitar').onclick = function () {
+      var antes = ler(); salvar('aceito'); fechar();
+      if (antes === 'recusado') { location.reload(); }
+    };
+    document.getElementById('vr-cookies-recusar').onclick = function () {
+      salvar('recusado'); fechar();
+      window['ga-disable-G-WYL5RGPB9W'] = true;
+      if (window.gtag) { gtag('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }); }
+      if (window.fbq) { fbq('consent', 'revoke'); }
+    };
+    window.vrCookies = { abrir: abrir };
+    if (!ler()) { abrir(); }
+  })();
+  </script>
+  <!-- Fim do aviso de cookies -->
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" role="img" aria-label="Flor da Vida — geometria sagrada">
+  <defs>
+    <clipPath id="fol-clip">
+      <circle cx="250" cy="250" r="150"/>
+    </clipPath>
+    <linearGradient id="fol-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4af6a"/>
+      <stop offset="50%" stop-color="#b8915a"/>
+      <stop offset="100%" stop-color="#d4af6a"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#fol-gold)" stroke-width="1.6">
+    <circle cx="250" cy="250" r="160"/>
+    <circle cx="250" cy="250" r="150"/>
+  </g>
+  <g fill="none" stroke="url(#fol-gold)" stroke-width="1.6" clip-path="url(#fol-clip)">
+    <circle cx="250" cy="250" r="50"/>
+    <circle cx="300" cy="250" r="50"/>
+    <circle cx="200" cy="250" r="50"/>
+    <circle cx="275" cy="293.30" r="50"/>
+    <circle cx="225" cy="293.30" r="50"/>
+    <circle cx="275" cy="206.70" r="50"/>
+    <circle cx="225" cy="206.70" r="50"/>
+    <circle cx="350" cy="250" r="50"/>
+    <circle cx="150" cy="250" r="50"/>
+    <circle cx="300" cy="336.60" r="50"/>
+    <circle cx="200" cy="336.60" r="50"/>
+    <circle cx="300" cy="163.40" r="50"/>
+    <circle cx="200" cy="163.40" r="50"/>
+    <circle cx="325" cy="293.30" r="50"/>
+    <circle cx="175" cy="293.30" r="50"/>
+    <circle cx="325" cy="206.70" r="50"/>
+    <circle cx="175" cy="206.70" r="50"/>
+    <circle cx="250" cy="336.60" r="50"/>
+    <circle cx="250" cy="163.40" r="50"/>
+  </g>
+</svg>

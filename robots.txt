@@ -1,0 +1,8 @@
+# Robots.txt — Vida Relax Poltronas de Massagem
+# https://vidarelaxpoltronas.com.br
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://vidarelaxpoltronas.com.br/sitemap.xml

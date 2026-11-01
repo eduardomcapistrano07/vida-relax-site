@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Preferencia de cookies (LGPD): se o visitante recusou, nada de medicao -->
+  <script>
+  (function () {
+    var escolha = null;
+    try { escolha = localStorage.getItem('vr_cookies'); } catch (e) {}
+    window.vrSemRastreio = (escolha === 'recusado');
+    if (window.vrSemRastreio) { window['ga-disable-G-WYL5RGPB9W'] = true; }
+  })();
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  if (window.vrSemRastreio) { fbq('consent', 'revoke'); }
+  fbq('init', '3964888213815860');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYL5RGPB9W"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WYL5RGPB9W');
+  // Clique em qualquer link de WhatsApp vira o evento "generate_lead" (conversao principal do site)
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (!/wa\.me|whatsapp\.com/i.test(href)) return;
+    var texto = '';
+    var m = href.match(/[?&]text=([^&]*)/);
+    if (m) { try { texto = decodeURIComponent(m[1].replace(/\+/g, ' ')); } catch (err) { texto = m[1]; } }
+    gtag('event', 'generate_lead', {
+      method: 'whatsapp',
+      lead_source: 'site',
+      page_path: location.pathname,
+      link_text: (a.textContent || '').trim().slice(0, 80),
+      whatsapp_message: texto.slice(0, 80)
+    });
+  }, true);
+  </script>
+  <!-- End Google Analytics -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Poltrona de Massagem em São Paulo com Frete Grátis | Vida Relax</title>
+  <meta name="description"
+    content="Poltronas de massagem iRest em São Paulo com estoque local, frete grátis, entrega e instalação. 10% de desconto no PIX ou até 10x sem juros. Fale no WhatsApp.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vidarelaxpoltronas.com.br/poltrona-de-massagem-sao-paulo/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vidarelaxpoltronas.com.br/poltrona-de-massagem-sao-paulo/">
+  <meta property="og:title" content="Poltrona de Massagem em São Paulo com Frete Grátis | Vida Relax">
+  <meta property="og:description" content="Estoque em São Paulo, frete grátis, entrega e instalação. Revenda oficial iRest há 15 anos.">
+  <meta property="og:image" content="https://vidarelaxpoltronas.com.br/img/optimized/fb8448012b82493f.webp">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Vida Relax">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Poltrona de Massagem em São Paulo com Frete Grátis | Vida Relax">
+  <meta name="twitter:description" content="Estoque em São Paulo, frete grátis, entrega e instalação. Fale no WhatsApp.">
+  <meta name="twitter:image" content="https://vidarelaxpoltronas.com.br/img/optimized/fb8448012b82493f.webp">
+  <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="../img/favicon/site.webmanifest">
+  <meta name="theme-color" content="#6b21a8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Store",
+      "name": "Vida Relax — Poltronas de Massagem",
+      "url": "https://vidarelaxpoltronas.com.br/",
+      "telephone": "+55-48-99132-4458",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Madre Benvenuta, 687 — Villa Romana Shopping, Piso L2",
+        "postalCode": "88035-000",
+        "addressLocality": "Florianópolis",
+        "addressRegion": "SC",
+        "addressCountry": "BR"
+      },
+      "areaServed": [
+        {
+          "@type": "State",
+          "name": "São Paulo"
+        },
+        {
+          "@type": "State",
+          "name": "Santa Catarina"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Vocês entregam poltrona de massagem em São Paulo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. Temos estoque em São Paulo, e a entrega e a instalação no estado de São Paulo têm frete grátis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais modelos estão disponíveis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A iRest Aura (massagem 2D, 15 programas, tela touchscreen) e a iRest Quantum (massagem 4D com IA, controle por voz em português e colete de aquecimento). Para quem busca o topo de linha, também trabalhamos com a iRest Maesthron."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como posso conhecer a poltrona sem ir a Florianópolis?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enviamos vídeos das poltronas funcionando e fazemos chamada de vídeo pelo WhatsApp para mostrar cada detalhe e tirar todas as dúvidas antes da compra."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais são as formas de pagamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "PIX com 10% de desconto ou cartão de crédito em até 10x sem juros. A compra pode ser feita toda pelo WhatsApp."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A poltrona tem garantia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, garantia de fábrica de 2 anos."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+
+<body>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3964888213815860&ev=PageView&noscript=1"/></noscript>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="ann-bar">
+    <span class="ann-highlight">Condição especial:</span> 10% de desconto no PIX e frete grátis para SC e SP
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-wrap header-inner">
+      <a href="/" class="logo header-logo">
+        <img src="../img/logo.png" alt="Vida Relax" class="logo-img">
+        <div class="logo-texts">
+          <b>Vida Relax</b>
+        </div>
+      </a>
+
+      <button type="button" class="nav-menu-toggle" id="nav-menu-toggle" aria-expanded="false"
+        aria-controls="primary-navigation" aria-label="Abrir menu">
+        <span class="nav-menu-toggle-box" aria-hidden="true">
+          <span class="nav-menu-toggle-bar"></span>
+          <span class="nav-menu-toggle-bar"></span>
+          <span class="nav-menu-toggle-bar"></span>
+        </span>
+      </button>
+
+      <nav id="primary-navigation" class="main-nav" aria-label="Menu principal">
+        <a href="/">Home</a>
+        <a href="/#sobre">Sobre</a>
+        <a href="/#catalogo">Produtos</a>
+        <a href="/aluguel-eventos/">Aluguel</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#contato">Contato</a>
+        <a href="https://wa.me/5548991324458?text=Ol%C3%A1!%20Quero%20conhecer%20as%20poltronas%20iRest."
+          target="_blank" rel="noopener noreferrer" class="nav-wa-link">💬 Falar com especialista</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/5548991324458?text=Olá!%20Quero%20conhecer%20as%20poltronas%20iRest." target="_blank"
+          rel="noopener noreferrer" class="btn-cta-head">
+          Falar com especialista
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="products-inner">
+      <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="/"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1">
+        </li>
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <span itemprop="name">Poltrona de massagem em São Paulo</span>
+          <meta itemprop="position" content="2">
+        </li>
+      </ol>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="rental-page">
+    <section class="rental-hero fade-in">
+      <div class="products-inner rental-hero-inner">
+        <div class="rental-hero-copy">
+          <span class="eyebrow">Estoque em São Paulo</span>
+          <h1 class="rental-page-title">Poltrona de massagem em São Paulo, com frete grátis</h1>
+          <p class="rental-lead">A Vida Relax é revenda oficial iRest há 15 anos e tem <strong>estoque em São Paulo</strong>.
+            Sua poltrona sai daqui mesmo, com <strong>frete grátis, entrega e instalação</strong> incluídas, e você compra
+            com toda a segurança pelo WhatsApp, com vídeos e chamada de vídeo antes de decidir.</p>
+          <div class="rental-hero-cta-row">
+            <a href="https://wa.me/5548991324458?text=Ol%C3%A1%21%20Sou%20de%20S%C3%A3o%20Paulo%20e%20quero%20saber%20mais%20sobre%20as%20poltronas%20de%20massagem%20iRest."
+              target="_blank" rel="noopener noreferrer" class="btn-rental-wa">Falar no WhatsApp</a>
+            <a href="#modelos" class="btn-outline-purple rental-catalog-link">Ver os modelos</a>
+          </div>
+        </div>
+        <figure class="rental-hero-figure">
+          <img src="../img/optimized/fb8448012b82493f.webp"
+            alt="Poltrona de massagem iRest Quantum" width="900" height="675" loading="eager" decoding="async">
+        </figure>
+      </div>
+    </section>
+    <section class="rental-body fade-in">
+      <div class="products-inner">
+        <div class="rental-cards">
+          <article class="rental-card">
+            <h2>Por que comprar com a Vida Relax em São Paulo</h2>
+            <ul class="rental-prose-list">
+              <li><strong>Estoque em São Paulo:</strong> a poltrona sai do nosso estoque no estado.</li>
+              <li><strong>Frete grátis</strong> para todo o estado de São Paulo, com entrega e instalação incluídas.</li>
+              <li><strong>10% de desconto no PIX</strong> ou até <strong>10x sem juros</strong> no cartão.</li>
+              <li><strong>Garantia de fábrica de 2 anos.</strong></li>
+              <li><strong>15 anos de experiência</strong> e mais de 500 famílias atendidas.</li>
+            </ul>
+          </article>
+          <article class="rental-card">
+            <h2>Como funciona a compra</h2>
+            <ol class="rental-steps">
+              <li><strong>Você chama no WhatsApp</strong> e conta como pretende usar a poltrona.</li>
+              <li><strong>Mostramos as poltronas funcionando</strong>, por vídeo ou em chamada de vídeo, e indicamos o modelo certo para você.</li>
+              <li><strong>Você fecha pelo WhatsApp</strong>, no PIX com 10% de desconto ou no cartão em até 10x sem juros.</li>
+              <li><strong>Entregamos e instalamos</strong> a poltrona na sua casa, com frete grátis.</li>
+            </ol>
+          </article>
+        </div>
+        <div class="rental-audience" id="modelos">
+          <h2>Modelos disponíveis</h2>
+          <div class="rental-cards">
+            <article class="rental-card">
+              <h3>iRest Aura</h3>
+              <p>Massagem 2D com trilho SL-Track do pescoço aos glúteos, 15 programas, tela touchscreen, gravidade zero e aquecimento nas costas. A escolha para começar com qualidade.</p>
+              <p><strong>R$ 14.900</strong> ou R$ 13.410 no PIX</p>
+              <a href="/poltronas/irest-aura/" class="btn-outline-purple">Ver a Aura</a>
+            </article>
+            <article class="rental-card">
+              <h3>iRest Quantum</h3>
+              <p>Massagem 4D com inteligência artificial, controle por voz em português, alongamento e ajuste automático dos pés, aquecimento nas costas e colete de aquecimento. A mais completa da linha para o dia a dia.</p>
+              <p><strong>R$ 22.900</strong> ou R$ 20.610 no PIX</p>
+              <a href="/poltronas/irest-quantum/" class="btn-outline-purple">Ver a Quantum</a>
+            </article>
+          </div>
+          <p style="margin-top:16px">Procura o topo de linha? Conheça a <a href="/poltronas/irest-maesthron/">iRest Maesthron</a>.
+            Ficou em dúvida entre os modelos? Leia <a href="/blog/diferenca-modelos-irest">a diferença entre os modelos iRest</a>.</p>
+        </div>
+        <div class="rental-audience">
+          <h2>Perguntas frequentes</h2>
+            <details class="rental-card" style="margin-bottom:12px">
+              <summary style="cursor:pointer;font-weight:600">Vocês entregam poltrona de massagem em São Paulo?</summary>
+              <p style="margin:10px 0 0">Sim. Temos estoque em São Paulo, e a entrega e a instalação no estado de São Paulo têm frete grátis.</p>
+            </details>
+            <details class="rental-card" style="margin-bottom:12px">
+              <summary style="cursor:pointer;font-weight:600">Quais modelos estão disponíveis?</summary>
+              <p style="margin:10px 0 0">A iRest Aura (massagem 2D, 15 programas, tela touchscreen) e a iRest Quantum (massagem 4D com IA, controle por voz em português e colete de aquecimento). Para quem busca o topo de linha, também trabalhamos com a iRest Maesthron.</p>
+            </details>
+            <details class="rental-card" style="margin-bottom:12px">
+              <summary style="cursor:pointer;font-weight:600">Como posso conhecer a poltrona sem ir a Florianópolis?</summary>
+              <p style="margin:10px 0 0">Enviamos vídeos das poltronas funcionando e fazemos chamada de vídeo pelo WhatsApp para mostrar cada detalhe e tirar todas as dúvidas antes da compra.</p>
+            </details>
+            <details class="rental-card" style="margin-bottom:12px">
+              <summary style="cursor:pointer;font-weight:600">Quais são as formas de pagamento?</summary>
+              <p style="margin:10px 0 0">PIX com 10% de desconto ou cartão de crédito em até 10x sem juros. A compra pode ser feita toda pelo WhatsApp.</p>
+            </details>
+            <details class="rental-card" style="margin-bottom:12px">
+              <summary style="cursor:pointer;font-weight:600">A poltrona tem garantia?</summary>
+              <p style="margin:10px 0 0">Sim, garantia de fábrica de 2 anos.</p>
+            </details>
+        </div>
+        <aside class="rental-cta-banner">
+          <div>
+            <h2>Quer ver a poltrona funcionando antes de decidir?</h2>
+            <p>Chame no WhatsApp e marque uma chamada de vídeo. Atendemos todo o estado de São Paulo.</p>
+          </div>
+          <a href="https://wa.me/5548991324458?text=Ol%C3%A1%21%20Sou%20de%20S%C3%A3o%20Paulo%20e%20gostaria%20de%20uma%20chamada%20de%20v%C3%ADdeo%20para%20conhecer%20as%20poltronas."
+            target="_blank" rel="noopener noreferrer" class="btn-rental-wa btn-rental-wa-inverse">Abrir WhatsApp — (48)
+            99132-4458</a>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo">
+          <img src="../img/logo.png" alt="Vida Relax" class="logo-img">
+          <div class="logo-texts">
+            <b>Vida Relax</b>
+            <small>Poltronas de Massagem</small>
+          </div>
+        </a>
+        <p>Há 15 anos oferecendo as melhores soluções em poltronas de massagem e bem-estar para você e sua família.
+          Somos revendedores oficiais iRest em Florianópolis. Seu bem-estar é nossa missão!</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/vidarelaxvillaromana" target="_blank" rel="noopener noreferrer" class="f-social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18" height="18" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/5548991324458" target="_blank" rel="noopener noreferrer" class="f-social" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+              <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.979-1.418A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm4.93 13.42c-.207.58-1.207 1.11-1.655 1.147-.448.037-.46.337-2.9-.663-2.44-1-3.93-3.5-4.05-3.66-.12-.16-.96-1.34-.92-2.53.04-1.19.65-1.76.88-2 .23-.24.5-.3.67-.3.17 0 .34.002.49.01.157.007.37-.06.58.46.21.52.71 1.79.77 1.92.06.13.1.28.02.45-.08.17-.12.27-.24.42-.12.15-.25.33-.36.44-.12.12-.24.25-.1.49.14.24.62 1.07 1.34 1.73.92.82 1.7 1.08 1.94 1.2.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.39.68 1.63.8.24.12.4.18.46.28.06.1.06.58-.15 1.16z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Produtos</h4>
+        <ul>
+          <li><a href="/poltronas/irest-aura/">iRest Aura</a></li>
+          <li><a href="/poltronas/irest-quantum/">iRest Quantum</a></li>
+          <li><a href="/poltronas/irest-maesthron/">iRest Maesthron</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="/#sobre">Sobre Nós</a></li>
+          <li><a href="/#showroom">Showroom</a></li>
+          <li><a href="/aluguel-eventos/">Aluguel para eventos</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/#contato">Contato</a></li>
+          <li><a href="https://instagram.com/vidarelaxvillaromana" target="_blank" rel="noopener noreferrer">@vidarelaxvillaromana</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <div class="footer-contact-list">
+          <div class="f-contact-row">
+            <div class="f-contact-icon">📞</div>
+            <div><b>(48) 9 9132-4458</b><span>WhatsApp / Telefone</span></div>
+          </div>
+          <div class="f-contact-row">
+            <div class="f-contact-icon">📍</div>
+            <div><b>Villa Romana Shopping</b><span>Av. Madre Benvenuta, 687 · Piso L2<br>Florianópolis – SC · CEP 88035-000</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Vida Relax – Bem Estar e Harmonia Comércio de Móveis e Serviços Ltda. | CNPJ: 49.518.213/0001-07 | <a href="/politica-de-privacidade/" style="color:inherit">Política de Privacidade</a></p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/5548991324458?text=Ol%C3%A1%21%20Sou%20de%20S%C3%A3o%20Paulo%20e%20quero%20saber%20mais%20sobre%20as%20poltronas%20de%20massagem%20iRest." target="_blank"
+    rel="noopener noreferrer" class="wa-float" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="#ffffff">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.49 2.031 7.8L0 32l8.418-2.004A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.77-1.852l-.485-.29-5.002 1.19 1.234-4.858-.317-.5A13.266 13.266 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.274-9.903c-.398-.199-2.355-1.162-2.72-1.294-.365-.133-.63-.199-.896.199-.265.398-1.029 1.294-1.261 1.56-.232.265-.465.298-.863.1-.398-.199-1.68-.619-3.2-1.974-1.183-1.054-1.981-2.356-2.213-2.754-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.697.199-.232.265-.398.398-.664.133-.265.067-.497-.033-.697-.1-.199-.896-2.162-1.228-2.96-.323-.776-.65-.671-.896-.683l-.763-.013c-.265 0-.697.1-1.062.497-.365.398-1.394 1.362-1.394 3.323s1.427 3.855 1.626 4.121c.199.265 2.808 4.287 6.805 6.015.951.41 1.693.655 2.272.838.954.303 1.823.26 2.51.158.766-.114 2.355-.963 2.688-1.893.332-.93.332-1.727.232-1.893-.099-.166-.365-.265-.763-.464z"/>
+    </svg>
+  </a>
+
+  <script>
+    // Mobile menu toggle
+    const toggle = document.getElementById('nav-menu-toggle');
+    const nav = document.getElementById('primary-navigation');
+    if (toggle && nav) {
+      toggle.addEventListener('click', () => {
+        const open = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', !open);
+        nav.classList.toggle('nav-open');
+      });
+    }
+
+    // Fade-in observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+  </script>
+  <!-- Meta Pixel: Lead event on WhatsApp clicks -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function(link) {
+      link.addEventListener('click', function() {
+        fbq('track', 'Lead', { content_name: 'WhatsApp Click' });
+      });
+    });
+  });
+  </script>
+  <!-- Aviso de cookies (LGPD) -->
+  <div id="vr-cookies" role="dialog" aria-live="polite" aria-label="Aviso de cookies" style="display:none;position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:560px;margin:0 auto;background:#14141e;color:#fff;border-radius:12px;padding:16px 18px;box-shadow:0 8px 30px rgba(0,0,0,.25);font-family:'Inter',sans-serif;font-size:14px;line-height:1.5">
+    <p style="margin:0 0 12px;color:#fff">Usamos cookies para medir as visitas e melhorar nossos anúncios. Você pode aceitar ou recusar. <a href="/politica-de-privacidade/" style="color:#e8c97a">Saiba mais</a></p>
+    <div style="display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap">
+      <button type="button" id="vr-cookies-recusar" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:8px 18px;font:600 14px 'Inter',sans-serif;cursor:pointer">Recusar</button>
+      <button type="button" id="vr-cookies-aceitar" style="background:#9333ea;color:#fff;border:0;border-radius:999px;padding:8px 18px;font:600 14px 'Inter',sans-serif;cursor:pointer">Aceitar</button>
+    </div>
+  </div>
+  <script>
+  (function () {
+    var caixa = document.getElementById('vr-cookies');
+    function ler() { try { return localStorage.getItem('vr_cookies'); } catch (e) { return null; } }
+    function salvar(v) { try { localStorage.setItem('vr_cookies', v); } catch (e) {} }
+    function fechar() { caixa.style.display = 'none'; }
+    function abrir() { caixa.style.display = 'block'; }
+    document.getElementById('vr-cookies-aceitar').onclick = function () {
+      var antes = ler(); salvar('aceito'); fechar();
+      if (antes === 'recusado') { location.reload(); }
+    };
+    document.getElementById('vr-cookies-recusar').onclick = function () {
+      salvar('recusado'); fechar();
+      window['ga-disable-G-WYL5RGPB9W'] = true;
+      if (window.gtag) { gtag('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }); }
+      if (window.fbq) { fbq('consent', 'revoke'); }
+    };
+    window.vrCookies = { abrir: abrir };
+    if (!ler()) { abrir(); }
+  })();
+  </script>
+  <!-- Fim do aviso de cookies -->
+</body>
+</html>

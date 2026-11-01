@@ -1,7 +1,11 @@
 # Netlify: redirecionamentos (substitui o antigo .htaccess, que o Netlify ignora)
 # HTTPS e www -> domínio principal são feitos automaticamente pelo Netlify.
+# Artigo novo do blog: acrescente aqui a linha /blog/<slug>.html -> /blog/<slug>.
 
 # URLs antigas com .html -> URLs limpas
-/blog/:slug.html   /blog/:slug   301!
-/index.html        /             301!
-/*/index.html      /:splat/      301!
+/blog/como-escolher-poltrona-ideal.html   /blog/como-escolher-poltrona-ideal   301!
+/blog/diferenca-modelos-irest.html        /blog/diferenca-modelos-irest        301!
+/blog/vale-a-pena.html                    /blog/vale-a-pena                    301!
+/blog/index.html                          /blog/                               301!
+/index.html                               /                                    301!
+/*/index.html                             /:splat/                             301!

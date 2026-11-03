@@ -1,8 +1,6 @@
 ﻿const PRODUCT_CATALOG = [
   {
     id: "aura",
-    averageRating: 4,
-    reviewCount: 18,
     category: "entrada",
     price: 14900,
     name: "iRest Aura",
@@ -26,26 +24,6 @@
       "Para quem é a iRest Aura? Para quem valoriza saúde, conforto e tecnologia no dia a dia. Para quem busca desempenho com elegância. E, principalmente, para quem entende que investir em qualidade de vida faz diferença.",
       "iRest Aura — porque você merece viver com mais equilíbrio, conforto e bem-estar todos os dias.",
     ],
-    reviews: [
-      {
-        name: "Marina F.",
-        stars: 5,
-        date: "12/01/2026",
-        text: "Comprei para minha mãe e ela usa todos os dias. Silenciosa e muito confortável.",
-      },
-      {
-        name: "Ricardo T.",
-        stars: 5,
-        date: "03/12/2025",
-        text: "Atendimento impecável na loja. A Aura superou a expectativa pelo preço.",
-      },
-      {
-        name: "Paula M.",
-        stars: 4,
-        date: "18/11/2025",
-        text: "Ótima para relaxar depois do treino. Demorou um pouco para acostumar com os programas.",
-      },
-    ],
     bullets: [
       "Massagem inteligente com escaneamento automático do corpo.",
       "Reclinamento com tecnologia de gravidade zero.",
@@ -59,8 +37,6 @@
   },
   {
     id: "aura-bege-branco",
-    averageRating: 4,
-    reviewCount: 18,
     category: "entrada",
     price: 14900,
     name: "iRest Aura",
@@ -85,26 +61,6 @@
       "Para quem é a iRest Aura? Para quem valoriza saúde, conforto e tecnologia no dia a dia. Para quem busca desempenho com elegância. E, principalmente, para quem entende que investir em qualidade de vida faz diferença.",
       "iRest Aura — porque você merece viver com mais equilíbrio, conforto e bem-estar todos os dias.",
     ],
-    reviews: [
-      {
-        name: "Marina F.",
-        stars: 5,
-        date: "12/01/2026",
-        text: "Comprei para minha mãe e ela usa todos os dias. Silenciosa e muito confortável.",
-      },
-      {
-        name: "Ricardo T.",
-        stars: 5,
-        date: "03/12/2025",
-        text: "Atendimento impecável na loja. A Aura superou a expectativa pelo preço.",
-      },
-      {
-        name: "Paula M.",
-        stars: 4,
-        date: "18/11/2025",
-        text: "Ótima para relaxar depois do treino. Demorou um pouco para acostumar com os programas.",
-      },
-    ],
     bullets: [
       "Massagem inteligente com escaneamento automático do corpo.",
       "Reclinamento com tecnologia de gravidade zero.",
@@ -118,8 +74,6 @@
   },
   {
     id: "quantum",
-    averageRating: 5,
-    reviewCount: 203,
     category: "premium",
     price: 22900,
     name: "iRest Quantum",
@@ -141,26 +95,6 @@
       "O painel com interface em tela e atalhos objetivos facilita escolher programas, velocidade e zonas prioritárias; a conectividade Bluetooth integrada permite acompanhar músicas ou conteúdos relaxantes com mais imersão durante a massagem.",
       "Com consumo nominal de 120 W, alimentação 110–240 V e operação com nível de ruído em torno de 60 dB, a Quantum equilibra desempenho e uso residencial. Na Vida Relax, você confere o modelo no showroom em Florianópolis com acompanhamento especializado antes de decidir.",
     ],
-    reviews: [
-      {
-        name: "Fernando K.",
-        stars: 5,
-        date: "19/01/2026",
-        text: "A diferença do L-Track se sente na lombar e glúteos. Top.",
-      },
-      {
-        name: "Juliana P.",
-        stars: 5,
-        date: "07/12/2025",
-        text: "Estávamos em dúvida entre modelos; a equipe da Vida Relax ajudou muito.",
-      },
-      {
-        name: "Otávio N.",
-        stars: 4,
-        date: "21/10/2025",
-        text: "Pesado nos recursos, leve no uso do dia a dia. Recomendo.",
-      },
-    ],
     bullets: [
       "Modelo PD-100 com massagem 4D Pro e varredura inteligente do corpo para personalizar intensidade e trajeto dos rolos.",
       "Trilho L-Track prolongado e airbags em múltiplas zonas (pressão nominal 0,025–0,03 MPa) para compressão coordenada.",
@@ -173,8 +107,6 @@
   },
   {
     id: "maesthron",
-    averageRating: 4.3,
-    reviewCount: 54,
     category: "premium",
     price: 54900,
     name: "iRest Maesthron",
@@ -198,26 +130,6 @@
       "No dia a dia, você pilota por voz, aplicativo ou painel touch: Bluetooth para áudio, carregador sem fio embutido, ionizador de ar para sensação de ambiente mais leve e limpo.",
       "Na Vida Relax em Florianópolis você confere o acabamento, testa os programas no showroom e recebe apoio na escolha do melhor modo para a sua rotina.",
     ],
-    reviews: [
-      {
-        name: "Luciana E.",
-        stars: 5,
-        date: "28/12/2025",
-        text: "Investimento alto, mas é outra categoria. Experiência de spa em casa.",
-      },
-      {
-        name: "Guilherme A.",
-        stars: 5,
-        date: "11/11/2025",
-        text: "Testamos várias marcas; o Maesthron foi o único que fechou com tudo que queríamos.",
-      },
-      {
-        name: "Sérgio V.",
-        stars: 5,
-        date: "02/09/2025",
-        text: "Atendimento premium condiz com o produto. Parabéns à Vida Relax.",
-      },
-    ],
     bullets: [
       "Motor dual 4D + 2D com trilho SL estendido (~153 cm), iOpen Stretch e AI Health para personalização da sessão.",
       "Aquecimento Graphene Jade Heating (grafite + jade), 20 programas, 17 técnicas e 36 airbags em coordenação.",
@@ -227,8 +139,6 @@
   },
   {
     id: "maesthron-branco-bege",
-    averageRating: 4.3,
-    reviewCount: 54,
     category: "premium",
     price: 54900,
     name: "iRest Maesthron",
@@ -252,26 +162,6 @@
       "No dia a dia, você pilota por voz, aplicativo ou painel touch: Bluetooth para áudio, carregador sem fio embutido, ionizador de ar para sensação de ambiente mais leve e limpo.",
       "Na Vida Relax em Florianópolis você confere o acabamento, testa os programas no showroom e recebe apoio na escolha do melhor modo para a sua rotina.",
     ],
-    reviews: [
-      {
-        name: "Luciana E.",
-        stars: 5,
-        date: "28/12/2025",
-        text: "Investimento alto, mas é outra categoria. Experiência de spa em casa.",
-      },
-      {
-        name: "Guilherme A.",
-        stars: 5,
-        date: "11/11/2025",
-        text: "Testamos várias marcas; o Maesthron foi o único que fechou com tudo que queríamos.",
-      },
-      {
-        name: "Sérgio V.",
-        stars: 5,
-        date: "02/09/2025",
-        text: "Atendimento premium condiz com o produto. Parabéns à Vida Relax.",
-      },
-    ],
     bullets: [
       "Motor dual 4D + 2D com trilho SL estendido (~153 cm), iOpen Stretch e AI Health para personalização da sessão.",
       "Aquecimento Graphene Jade Heating (grafite + jade), 20 programas, 17 técnicas e 36 airbags em coordenação.",
@@ -281,8 +171,6 @@
   },
   {
     id: "maesthron-branco-cinza",
-    averageRating: 4.3,
-    reviewCount: 54,
     category: "premium",
     price: 54900,
     name: "iRest Maesthron",
@@ -305,26 +193,6 @@
       { type: "heading", text: "Controle, som e ar ambiente" },
       "No dia a dia, você pilota por voz, aplicativo ou painel touch: Bluetooth para áudio, carregador sem fio embutido, ionizador de ar para sensação de ambiente mais leve e limpo.",
       "Na Vida Relax em Florianópolis você confere o acabamento, testa os programas no showroom e recebe apoio na escolha do melhor modo para a sua rotina.",
-    ],
-    reviews: [
-      {
-        name: "Luciana E.",
-        stars: 5,
-        date: "28/12/2025",
-        text: "Investimento alto, mas é outra categoria. Experiência de spa em casa.",
-      },
-      {
-        name: "Guilherme A.",
-        stars: 5,
-        date: "11/11/2025",
-        text: "Testamos várias marcas; o Maesthron foi o único que fechou com tudo que queríamos.",
-      },
-      {
-        name: "Sérgio V.",
-        stars: 5,
-        date: "02/09/2025",
-        text: "Atendimento premium condiz com o produto. Parabéns à Vida Relax.",
-      },
     ],
     bullets: [
       "Motor dual 4D + 2D com trilho SL estendido (~153 cm), iOpen Stretch e AI Health para personalização da sessão.",
@@ -582,7 +450,6 @@ function buildProductCardHtml(p, opts = {}) {
               <span class="aura-price-pix">PIX: <strong>${escapeHtml(p.pricePix)}</strong> (10% off)</span>
             </div>
           </div>
-          <div class="stars stars-under-price" role="img" aria-label="${escapeHtml(ratingAria)}">${ratingStarSpans}</div>
           <span class="p-detail-link">Ver detalhes →</span>
         </div>
       </a>`;
@@ -763,10 +630,6 @@ function renderProduct(slug, staticOnly = false) {
             <span class="aura-price-full">${escapeHtml(p.priceFull)}</span>
             <span class="aura-price-parcel">10x de <strong>${escapeHtml(p.priceParcel)}</strong> sem juros</span>
             <span class="aura-price-pix">PIX: <strong>${escapeHtml(p.pricePix)}</strong> (10% off)</span>
-          </div>
-          <div class="pdp-rating-inline" role="group" aria-label="${escapeHtml(ratingAria)}">
-            <span class="stars pdp-rating-stars">${ratingStarSpans}</span>
-            <span class="pdp-rating-meta">${escapeHtml(ratingMeta)}</span>
           </div>
           <div class="product-detail-actions pdp-buy-row">
             <a href="https://wa.me/5548991324458?text=${waText}" target="_blank" rel="noopener" class="btn-hero-primary">Falar no WhatsApp</a>

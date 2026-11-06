@@ -2,7 +2,7 @@
   {
     id: "aura",
     category: "entrada",
-    price: 14900,
+    price: 15900,
     name: "iRest Aura",
     variant: "",
     shortCat: "Poltrona de massagem · escaneamento inteligente · gravidade zero",
@@ -10,9 +10,9 @@
     badgeClass: "novo",
     img: "/img/optimized/ab66170794012747.webp",
     imgHover: "/img/optimized/6c0429f4d32c931d.webp",
-    priceFull: "R$ 14.900,00",
-    priceParcel: "R$ 1.490,00",
-    pricePix: "R$ 13.410,00",
+    priceFull: "R$ 15.900,00",
+    priceParcel: "R$ 1.590,00",
+    pricePix: "R$ 14.310,00",
     specsImage: "/img/optimized/fede54a5be774afd.webp",
     specs: {},
     description: [
@@ -38,7 +38,7 @@
   {
     id: "aura-bege-branco",
     category: "entrada",
-    price: 14900,
+    price: 15900,
     name: "iRest Aura",
     variant: "",
     shortCat:
@@ -47,9 +47,9 @@
     badgeClass: "novo",
     img: "/img/optimized/0739b0eeb5a6960f.webp",
     imgHover: "/img/optimized/79f56ab07316a178.webp",
-    priceFull: "R$ 14.900,00",
-    priceParcel: "R$ 1.490,00",
-    pricePix: "R$ 13.410,00",
+    priceFull: "R$ 15.900,00",
+    priceParcel: "R$ 1.590,00",
+    pricePix: "R$ 14.310,00",
     specsImage: "/img/optimized/fede54a5be774afd.webp",
     specs: {},
     description: [
@@ -87,7 +87,7 @@
     specs: {},
     priceFull: "R$ 22.900,00",
     priceParcel: "R$ 2.290,00",
-    pricePix: "R$ 20.610,00",
+    pricePix: "R$ 20.500,00",
     description: [
       "A iRest Quantum (modelo PD-100) consolida massagem 4D Pro com leitura inteligente do corpo, ajustando intensidade e trajeto dos rolos para acompanhar curvas da coluna, lombar, glúteos e pernas com movimentos mais fluidos e precisos.",
       "O trilho L-Track prolongado estende o alcance dos rolos ao longo da coluna e regiões posteriores, somando compressão com airbags em ombros, braços, assento e pernas para uma sessão envolvente entre relaxamento profundo e alívio de tensão acumulada no dia a dia.",

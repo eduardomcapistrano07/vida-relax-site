@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Preferencia de cookies (LGPD): se o visitante recusou, nada de medicao -->
+  <script>
+  (function () {
+    var escolha = null;
+    try { escolha = localStorage.getItem('vr_cookies'); } catch (e) {}
+    window.vrSemRastreio = (escolha === 'recusado');
+    if (window.vrSemRastreio) { window['ga-disable-G-WYL5RGPB9W'] = true; }
+  })();
+  </script>
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  if (window.vrSemRastreio) { fbq('consent', 'revoke'); }
+  fbq('init', '3964888213815860');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WYL5RGPB9W"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-WYL5RGPB9W');
+  // Clique em qualquer link de WhatsApp vira o evento "generate_lead" (conversao principal do site)
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a) return;
+    var href = a.getAttribute('href') || '';
+    if (!/wa\.me|whatsapp\.com/i.test(href)) return;
+    var texto = '';
+    var m = href.match(/[?&]text=([^&]*)/);
+    if (m) { try { texto = decodeURIComponent(m[1].replace(/\+/g, ' ')); } catch (err) { texto = m[1]; } }
+    gtag('event', 'generate_lead', {
+      method: 'whatsapp',
+      lead_source: 'site',
+      page_path: location.pathname,
+      link_text: (a.textContent || '').trim().slice(0, 80),
+      whatsapp_message: texto.slice(0, 80)
+    });
+  }, true);
+  </script>
+  <!-- End Google Analytics -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Cadeira de Massagem para Dor nas Costas: Guia | Vida Relax</title>
+  <meta name="description"
+    content="Cadeira de massagem para quem sente dor nas costas: trilho, 2D x 4D, aquecimento e gravidade zero. O que olhar antes de comprar, sem promessa de cura.">
+  <meta name="keywords" content="cadeira de massagem para dor nas costas, poltrona de massagem para coluna, cadeira de massagem lombar, cadeira de massagem com aquecimento, iRest">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Vida Relax — Poltronas de Massagem">
+  <link rel="canonical" href="https://vidarelaxpoltronas.com.br/blog/cadeira-de-massagem-dor-nas-costas">
+
+  <!-- Open Graph / Facebook / WhatsApp -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://vidarelaxpoltronas.com.br/blog/cadeira-de-massagem-dor-nas-costas">
+  <meta property="og:title" content="Cadeira de Massagem para Dor nas Costas: Guia | Vida Relax">
+  <meta property="og:description" content="Cadeira de massagem para quem sente dor nas costas: trilho, 2D x 4D, aquecimento e gravidade zero. O que olhar antes de comprar, sem promessa de cura.">
+  <meta property="og:image" content="https://vidarelaxpoltronas.com.br/img/optimized/aa2ec24a9f230574.webp">
+
+
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Vida Relax">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cadeira de Massagem para Dor nas Costas: Guia | Vida Relax">
+  <meta name="twitter:description" content="Cadeira de massagem para quem sente dor nas costas: trilho, 2D x 4D, aquecimento e gravidade zero. O que olhar antes de comprar, sem promessa de cura.">
+  <meta name="twitter:image" content="https://vidarelaxpoltronas.com.br/img/optimized/aa2ec24a9f230574.webp">
+
+  <link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="../img/favicon/site.webmanifest">
+  <meta name="theme-color" content="#6b21a8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+  <!-- JSON-LD Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Cadeira de Massagem para Quem Sente Dor nas Costas: O Que Considerar Antes de Comprar",
+    "description": "Cadeira de massagem para quem sente dor nas costas: trilho, 2D x 4D, aquecimento e gravidade zero. O que olhar antes de comprar, sem promessa de cura.",
+    "image": "https://vidarelaxpoltronas.com.br/img/optimized/aa2ec24a9f230574.webp",
+    "author": {
+      "@type": "Organization",
+      "name": "Vida Relax",
+      "url": "https://vidarelaxpoltronas.com.br"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Vida Relax",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vidarelaxpoltronas.com.br/img/logo.png"
+      }
+    },
+    "datePublished": "2026-11-19",
+    "dateModified": "2026-11-19",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://vidarelaxpoltronas.com.br/blog/cadeira-de-massagem-dor-nas-costas"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Cadeira de massagem trata dor nas costas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. A cadeira de massagem é feita para relaxamento, conforto e bem-estar, e não substitui tratamento. Se você sente dor com frequência, converse com o seu médico antes de usar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qual modelo é mais indicado para relaxar as costas inteiras?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Procure um trilho que vá do pescoço aos glúteos. Na Vida Relax, a Aura e a Quantum têm o trilho SL-Track completo. A Quantum soma massagem 4D, colete de aquecimento e trabalho nos pés."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "A poltrona tem aquecimento?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. A Aura tem aquecimento nas costas, e a Quantum tem aquecimento nas costas e colete de aquecimento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dá para parcelar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, em até 10x sem juros no cartão de crédito. No PIX, há 10% de desconto: a Aura sai por R$ 14.310 e a Quantum por R$ 20.500."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso experimentar antes de comprar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. O test drive no showroom do Villa Romana Shopping, em Florianópolis, é gratuito e sem compromisso."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+
+<body>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3964888213815860&ev=PageView&noscript=1"/></noscript>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="ann-bar">
+    <span class="ann-highlight">Condição especial:</span> 10% de desconto no PIX e frete grátis para SC e SP
+  </div>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-wrap header-inner">
+      <a href="/" class="logo header-logo">
+        <img src="../img/logo.png" alt="Vida Relax" class="logo-img">
+        <div class="logo-texts">
+          <b>Vida Relax</b>
+        </div>
+      </a>
+
+      <button type="button" class="nav-menu-toggle" id="nav-menu-toggle" aria-expanded="false"
+        aria-controls="primary-navigation" aria-label="Abrir menu">
+        <span class="nav-menu-toggle-box" aria-hidden="true">
+          <span class="nav-menu-toggle-bar"></span>
+          <span class="nav-menu-toggle-bar"></span>
+          <span class="nav-menu-toggle-bar"></span>
+        </span>
+      </button>
+
+      <nav id="primary-navigation" class="main-nav" aria-label="Menu principal">
+        <a href="/">Home</a>
+        <a href="/#sobre">Sobre</a>
+        <a href="/#catalogo">Produtos</a>
+        <a href="/aluguel-eventos/">Aluguel</a>
+        <a href="/blog/" class="active">Blog</a>
+        <a href="/#contato">Contato</a>
+        <a href="https://wa.me/5548991324458?text=Ol%C3%A1!%20Quero%20conhecer%20as%20poltronas%20iRest."
+          target="_blank" rel="noopener noreferrer" class="nav-wa-link">&#128172; Falar com especialista</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/5548991324458?text=Ol%C3%A1!%20Quero%20conhecer%20as%20poltronas%20iRest." target="_blank"
+          rel="noopener noreferrer" class="btn-cta-head">
+          Falar com especialista
+        </a>
+      </div>
+    </div>
+    <div class="nav-drawer-backdrop" id="nav-drawer-backdrop" hidden tabindex="-1"></div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a>
+    <span>›</span>
+    <a href="/blog/">Blog</a>
+    <span>›</span>
+    Cadeira de Massagem para Dor nas Costas
+  </nav>
+
+  <!-- ARTICLE -->
+  <article class="blog-article-page">
+    <div class="blog-article-inner">
+
+      <header class="blog-article-header">
+        <h1>Cadeira de Massagem para Quem Sente Dor nas Costas: O Que Considerar Antes de Comprar</h1>
+        <p class="blog-article-meta">Publicado em 19 de novembro de 2026 · Por Vida Relax | Tempo de leitura: 7 minutos</p>
+      </header>
+
+      <div class="blog-article-prose">
+        <p>Muita gente começa a pesquisar cadeira de massagem (ou poltrona de massagem, como também é chamada) depois de um período de costas cansadas: muitas horas sentado no trabalho, dias puxados, tensão que se acumula nos ombros e na lombar. A dúvida que aparece logo é: qual modelo faz sentido para mim? Neste guia, reunimos o que vale olhar antes de comprar, sem promessa milagrosa e com foco no que realmente muda o conforto no dia a dia.</p>
+
+        <h2>Primeiro: o que uma cadeira de massagem faz (e o que não faz)</h2>
+        <p>Uma cadeira de massagem é feita para <strong>relaxamento, conforto e bem-estar</strong>. Ela ajuda a soltar a tensão do fim do dia e cria um momento de pausa dentro de casa, todos os dias, no horário que você quiser. Ela não é um tratamento e não substitui o acompanhamento de um profissional de saúde.</p>
+        <p>Se você tem dor frequente, uma condição na coluna, está em recuperação de cirurgia ou tem qualquer dúvida sobre a sua saúde, <strong>converse com o seu médico antes de usar</strong> qualquer poltrona de massagem. Ele é a pessoa certa para dizer se e como a massagem combina com o seu caso.</p>
+
+        <h2>5 pontos para olhar se as suas costas pedem descanso</h2>
+
+        <h3>1. Até onde vai o trilho</h3>
+        <p>O trilho é o caminho que os roletes percorrem no seu corpo. No trilho em formato de L (SL-Track), os roletes descem do pescoço, acompanham a curva da coluna e chegam até os glúteos. Para quem sente cansaço nas costas inteiras, e não só entre as escápulas, esse percurso completo faz diferença. Modelos mais simples costumam ter um percurso mais curto. Na linha iRest que vendemos hoje, a Aura, a Quantum e a Maesthron têm o SL-Track do pescoço aos glúteos.</p>
+
+        <h3>2. O tipo de mecanismo: 2D, 3D ou 4D</h3>
+        <p>No mecanismo 2D, os roletes sobem, descem e se movem para os lados. No 3D, eles também avançam mais ou menos contra o corpo, o que acrescenta profundidade. O 4D soma o ritmo: velocidade e intensidade variam ao longo do movimento, o que deixa a sensação mais próxima da massagem feita com as mãos. Quem prefere uma massagem mais suave costuma se sentir bem com o 2D; quem gosta de sentir a massagem com mais presença e variação tende a preferir o 4D. Conforto é pessoal, e por isso testar ajuda muito.</p>
+
+        <h3>3. Aquecimento nas costas</h3>
+        <p>O calor ajuda a deixar o momento ainda mais relaxante, principalmente nos dias frios. Vale conferir onde ele atua. Na Aura, o aquecimento é nas costas. Na Quantum, além das costas, há um colete de aquecimento. Na Maesthron, o aquecimento usa grafeno e jade.</p>
+
+        <h3>4. Gravidade zero</h3>
+        <p>Na posição de gravidade zero, a poltrona reclina e eleva as pernas, distribuindo o peso do corpo de um jeito mais confortável. Para muita gente, é a posição em que a sensação de descanso fica mais clara. Aura, Quantum e Maesthron têm gravidade zero.</p>
+
+        <h3>5. Facilidade de uso no dia a dia</h3>
+        <p>Uma poltrona que você usa todos os dias precisa ser simples. Programas automáticos prontos evitam ter de configurar tudo a cada sessão. A Aura e a Quantum têm 15 programas; a Maesthron, 20. A Aura tem tela touchscreen, e a Quantum tem controle por voz em português, prático para quem quer começar a massagem já deitado.</p>
+
+        <h2>Além das costas: pés, pernas e ombros</h2>
+        <p>Quem passa o dia em pé ou sentado costuma sentir cansaço também nas pernas e nos pés. Todas as poltronas da linha iRest têm airbags. A Quantum vai além nos pés, com alongamento e ajuste automático dos pés, e é o modelo que mais recomendamos para quem quer a experiência mais completa todos os dias.</p>
+
+        <h2>Comparativo rápido dos modelos à venda</h2>
+        <div class="blog-article-table-wrap">
+          <table class="blog-article-table">
+            <thead>
+              <tr>
+                <th scope="col">Recurso</th>
+                <th scope="col">iRest Aura</th>
+                <th scope="col">iRest Quantum</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Mecanismo</th><td>Massagem 2D</td><td>Massagem 4D com IA</td></tr>
+              <tr><th scope="row">Trilho</th><td>SL-Track, do pescoço aos glúteos</td><td>SL-Track, do pescoço aos glúteos</td></tr>
+              <tr><th scope="row">Programas</th><td>15, na tela touchscreen</td><td>15, com controle por voz em português</td></tr>
+              <tr><th scope="row">Aquecimento</th><td>Nas costas</td><td>Nas costas e colete de aquecimento</td></tr>
+              <tr><th scope="row">Pés</th><td>Airbags</td><td>Airbags, alongamento e ajuste automático dos pés</td></tr>
+              <tr><th scope="row">Gravidade zero</th><td>Sim</td><td>Sim</td></tr>
+              <tr><th scope="row">Preço</th><td>R$ 15.900 ou R$ 14.310 no PIX</td><td>R$ 22.900 ou R$ 20.500 no PIX</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>As duas podem ser pagas em até 10x sem juros no cartão. Para quem busca o topo da linha, a <a href="/poltronas/irest-maesthron/">iRest Maesthron</a> reúne massagem 4D + 2D duplo, 20 programas e gravidade zero premium.</p>
+
+        <h2>Como usar no dia a dia</h2>
+        <ul>
+          <li><strong>Comece pelos programas automáticos.</strong> Eles já combinam movimento, intensidade e tempo. Depois de algumas sessões, você descobre o seu favorito.</li>
+          <li><strong>Prefira sessões curtas e frequentes.</strong> Um momento de relaxamento no fim do dia costuma ser mais agradável do que sessões muito longas de vez em quando.</li>
+          <li><strong>Ajuste a intensidade ao seu corpo.</strong> Massagem boa é confortável. Se incomodar, reduza a intensidade ou troque de programa.</li>
+          <li><strong>Siga a orientação do seu médico</strong> se você tem alguma condição de saúde.</li>
+        </ul>
+
+        <h2>O que conferir antes de fechar a compra</h2>
+        <ul>
+          <li><strong>Garantia e assistência.</strong> As poltronas iRest da Vida Relax têm garantia de fábrica de 2 anos, com assistência técnica em Santa Catarina.</li>
+          <li><strong>Entrega e instalação.</strong> Para SC e SP, o frete é grátis, com entrega e instalação incluídas. Para outros estados, a equipe verifica o frete para a sua cidade.</li>
+          <li><strong>Experimente, se puder.</strong> O test drive no showroom do Villa Romana Shopping, em Florianópolis, é gratuito e sem compromisso. Se você mora longe, mandamos vídeos dos modelos pelo WhatsApp.</li>
+        </ul>
+
+        <h2>Perguntas frequentes</h2>
+        <h3>Cadeira de massagem trata dor nas costas?</h3>
+        <p>Não. A cadeira de massagem é feita para relaxamento, conforto e bem-estar, e não substitui tratamento. Se você sente dor com frequência, converse com o seu médico antes de usar.</p>
+        <h3>Qual modelo é mais indicado para relaxar as costas inteiras?</h3>
+        <p>Procure um trilho que vá do pescoço aos glúteos. Na Vida Relax, a Aura e a Quantum têm o trilho SL-Track completo. A Quantum soma massagem 4D, colete de aquecimento e trabalho nos pés.</p>
+        <h3>A poltrona tem aquecimento?</h3>
+        <p>Sim. A Aura tem aquecimento nas costas, e a Quantum tem aquecimento nas costas e colete de aquecimento.</p>
+        <h3>Dá para parcelar?</h3>
+        <p>Sim, em até 10x sem juros no cartão de crédito. No PIX, há 10% de desconto: a Aura sai por R$ 14.310 e a Quantum por R$ 20.500.</p>
+        <h3>Posso experimentar antes de comprar?</h3>
+        <p>Sim. O test drive no showroom do Villa Romana Shopping, em Florianópolis, é gratuito e sem compromisso.</p>
+
+        <aside class="blog-article-cta">
+          <h2>Quer ajuda para escolher?</h2>
+          <p>Conte para a gente como é a sua rotina no WhatsApp. Mandamos vídeos dos modelos, tiramos dúvidas e, se preferir, você experimenta no showroom do Villa Romana Shopping.</p>
+          <a href="https://wa.me/5548991324458?text=Ol%C3%A1!%20Quero%20conhecer%20as%20poltronas%20iRest." target="_blank" rel="noopener noreferrer" class="btn-newsletter">Falar com a gente no WhatsApp</a>
+        </aside>
+      </div>
+
+      <div class="blog-article-related">
+        <h2>Leia Também</h2>
+        <ul>
+          <li><a href="/blog/quanto-custa-cadeira-de-massagem">Quanto Custa uma Cadeira de Massagem Boa em 2026? &#8594;</a></li>
+          <li><a href="/blog/diferenca-modelos-irest">Diferença Entre os Modelos iRest: Aura vs Quantum vs Maesthron &#8594;</a></li>
+          <li><a href="/blog/como-escolher-poltrona-ideal">Como Escolher a Poltrona de Massagem Ideal: Guia Completo &#8594;</a></li>
+        </ul>
+      </div>
+
+      <p class="blog-article-foot">© 2026 Vida Relax — Poltronas de Massagem | Florianópolis</p>
+    </div>
+  </article>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo">
+          <img src="../img/logo.png" alt="Vida Relax" class="logo-img">
+          <div class="logo-texts">
+            <b>Vida Relax</b>
+            <small>Poltronas de Massagem</small>
+          </div>
+        </a>
+        <p>Há 15 anos oferecendo as melhores soluções em poltronas de massagem e bem-estar para você e sua família.
+          Somos revendedores oficiais iRest em Florianópolis. Seu bem-estar é nossa missão!</p>
+        <div class="footer-socials">
+          <a href="https://instagram.com/vidarelaxvillaromana" target="_blank" rel="noopener noreferrer" class="f-social"
+            aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              width="18" height="18" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+            </svg></a>
+          <a href="https://wa.me/5548991324458" target="_blank" rel="noopener noreferrer" class="f-social" aria-label="WhatsApp"><svg
+              viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.979-1.418A9.953 9.953 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2zm4.93 13.42c-.207.58-1.207 1.11-1.655 1.147-.448.037-.46.337-2.9-.663-2.44-1-3.93-3.5-4.05-3.66-.12-.16-.96-1.34-.92-2.53.04-1.19.65-1.76.88-2 .23-.24.5-.3.67-.3.17 0 .34.002.49.01.157.007.37-.06.58.46.21.52.71 1.79.77 1.92.06.13.1.28.02.45-.08.17-.12.27-.24.42-.12.15-.25.33-.36.44-.12.12-.24.25-.1.49.14.24.62 1.07 1.34 1.73.92.82 1.7 1.08 1.94 1.2.24.12.38.1.52-.06.14-.16.6-.7.76-.94.16-.24.32-.2.54-.12.22.08 1.39.68 1.63.8.24.12.4.18.46.28.06.1.06.58-.15 1.16z" />
+            </svg></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Produtos</h4>
+        <ul>
+          <li><a href="/poltronas/irest-aura/">iRest Aura</a></li>
+          <li><a href="/poltronas/irest-quantum/">iRest Quantum</a></li>
+          <li><a href="/poltronas/irest-maesthron/">iRest Maesthron</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="/#sobre">Sobre Nós</a></li>
+          <li><a href="/#showroom">Showroom</a></li>
+          <li><a href="/aluguel-eventos/">Aluguel para eventos</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/#contato">Contato</a></li>
+          <li><a href="https://instagram.com/vidarelaxvillaromana" target="_blank" rel="noopener noreferrer">@vidarelaxvillaromana</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <div class="footer-contact-list">
+          <div class="f-contact-row">
+            <div class="f-contact-icon">&#128222;</div>
+            <div><b>(48) 9 9132-4458</b><span>WhatsApp / Telefone</span></div>
+          </div>
+          <div class="f-contact-row">
+            <div class="f-contact-icon">&#128205;</div>
+            <div><b>Villa Romana Shopping</b><span>Av. Madre Benvenuta, 687 · Piso L2<br>Florianópolis – SC · CEP 88035-000</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Vida Relax – Bem Estar e Harmonia Comércio de Móveis e Serviços Ltda. | CNPJ: 49.518.213/0001-07 | <a href="/politica-de-privacidade/" style="color:inherit">Política de Privacidade</a></p>
+      <p class="verse">"Abundâncias e riquezas há em tua morada, e a tua justiça permanece para sempre." — Salmo 112:3</p>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/5548991324458?text=Ol%C3%A1!%20Tenho%20interesse%20em%20uma%20poltrona%20iRest." target="_blank"
+    rel="noopener noreferrer" class="wa-float" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="#ffffff">
+      <path
+        d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.49 2.031 7.8L0 32l8.418-2.004A15.93 15.93 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 0 1-6.77-1.852l-.485-.29-5.002 1.19 1.234-4.858-.317-.5A13.266 13.266 0 0 1 2.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.274-9.903c-.398-.199-2.355-1.162-2.72-1.294-.365-.133-.63-.199-.896.199-.265.398-1.029 1.294-1.261 1.56-.232.265-.465.298-.863.1-.398-.199-1.68-.619-3.2-1.974-1.183-1.054-1.981-2.356-2.213-2.754-.232-.398-.025-.613.174-.811.179-.178.398-.465.597-.697.199-.232.265-.398.398-.664.133-.265.067-.497-.033-.697-.1-.199-.896-2.162-1.228-2.96-.323-.776-.65-.671-.896-.683l-.763-.013c-.265 0-.697.1-1.062.497-.365.398-1.394 1.362-1.394 3.323s1.427 3.855 1.626 4.121c.199.265 2.808 4.287 6.805 6.015.951.41 1.693.655 2.272.838.954.303 1.823.26 2.51.158.766-.114 2.355-.963 2.688-1.893.332-.93.332-1.727.232-1.893-.099-.166-.365-.265-.763-.464z" />
+    </svg>
+  </a>
+
+  <script src="../js/main.js?v=c33ae23f6e1d"></script>
+  <!-- Meta Pixel: Lead event on WhatsApp clicks -->
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href*="wa.me"]').forEach(function(link) {
+      link.addEventListener('click', function() {
+        fbq('track', 'Lead', { content_name: 'WhatsApp Click' });
+      });
+    });
+  });
+  </script>
+  <!-- Aviso de cookies (LGPD) -->
+  <div id="vr-cookies" role="dialog" aria-live="polite" aria-label="Aviso de cookies" style="display:none;position:fixed;left:16px;right:16px;bottom:16px;z-index:9999;max-width:560px;margin:0 auto;background:#14141e;color:#fff;border-radius:12px;padding:16px 18px;box-shadow:0 8px 30px rgba(0,0,0,.25);font-family:'Inter',sans-serif;font-size:14px;line-height:1.5">
+    <p style="margin:0 0 12px;color:#fff">Usamos cookies para medir as visitas e melhorar nossos anúncios. Você pode aceitar ou recusar. <a href="/politica-de-privacidade/" style="color:#e8c97a">Saiba mais</a></p>
+    <div style="display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap">
+      <button type="button" id="vr-cookies-recusar" style="background:transparent;color:#fff;border:1px solid rgba(255,255,255,.45);border-radius:999px;padding:8px 18px;font:600 14px 'Inter',sans-serif;cursor:pointer">Recusar</button>
+      <button type="button" id="vr-cookies-aceitar" style="background:#9333ea;color:#fff;border:0;border-radius:999px;padding:8px 18px;font:600 14px 'Inter',sans-serif;cursor:pointer">Aceitar</button>
+    </div>
+  </div>
+  <script>
+  (function () {
+    var caixa = document.getElementById('vr-cookies');
+    function ler() { try { return localStorage.getItem('vr_cookies'); } catch (e) { return null; } }
+    function salvar(v) { try { localStorage.setItem('vr_cookies', v); } catch (e) {} }
+    function fechar() { caixa.style.display = 'none'; }
+    function abrir() { caixa.style.display = 'block'; }
+    document.getElementById('vr-cookies-aceitar').onclick = function () {
+      var antes = ler(); salvar('aceito'); fechar();
+      if (antes === 'recusado') { location.reload(); }
+    };
+    document.getElementById('vr-cookies-recusar').onclick = function () {
+      salvar('recusado'); fechar();
+      window['ga-disable-G-WYL5RGPB9W'] = true;
+      if (window.gtag) { gtag('consent', 'update', { analytics_storage: 'denied', ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' }); }
+      if (window.fbq) { fbq('consent', 'revoke'); }
+    };
+    window.vrCookies = { abrir: abrir };
+    if (!ler()) { abrir(); }
+  })();
+  </script>
+  <!-- Fim do aviso de cookies -->
+</body>
+
+</html>
